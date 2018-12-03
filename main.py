@@ -69,5 +69,4 @@ def valid_user():
     template = jinja_env.get_template('user_greeting.html')
     return template.render(username = username)
 
-
 app.run()
