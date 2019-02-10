@@ -28,13 +28,13 @@ def validate_user():
     verifypassword_error = ''
     email_error = ''
 
-    if len(username) > 3 and len(username) < 20:   # Correct case
+    if len(username) > 2 and len(username) < 20:   # Correct case
         username = username
     else:
         username_error = "Username is invalid (must be between 3 and 20 characters)"
         username = ""
 
-    if len(password) > 3 and len(password) < 20 and ' ' not in password: # Correct Case
+    if len(password) > 2 and len(password) < 20 and ' ' not in password: # Correct Case
         password = password
     else:
         password_error = "Invalid password (must be between 3 and 20 characters, no spaces)"
