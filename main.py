@@ -66,6 +66,7 @@ def validate_user():
 @app.route('/valid')
 def valid_user():
     username = request.args.get('username')
+    password = request
     template = jinja_env.get_template('user_greeting.html')
     return template.render(username = username)
 
